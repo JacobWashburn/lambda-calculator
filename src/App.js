@@ -1,6 +1,7 @@
 import React from "react";
 import "./App.css";
 import "./NumberButtons.css";
+import "./OperatorButtons.css";
 import NumberButton from './components/ButtonComponents/NumberButtons/NumberButton'
 import OperatorButton from './components/ButtonComponents/OperatorButtons/OperatorButton'
 import SpecialButton from './components/ButtonComponents/SpecialButtons/SpecialButton'
