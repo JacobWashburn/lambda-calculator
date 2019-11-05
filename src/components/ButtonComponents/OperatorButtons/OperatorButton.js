@@ -3,9 +3,11 @@ import Operators from './Operators'
 
 
 const OperatorButton = () => {
-  return (
-      <Operators/>
-  );
+    return (
+        <div className='operButtCont'>
+            <Operators/>
+        </div>
+    );
 };
 
 export default OperatorButton

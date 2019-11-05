@@ -9,13 +9,11 @@ const Specials = () => {
   // STEP 2 - add the imported data to state
     const [specialChar] = useState(specials)
   return (
-    <div>
-        {specialChar.map((item, index) => {
+      specialChar.map((item, index) => {
             return (
-                <button key={index} onClick={() => console.log(item)}>{item}</button>
+                <button key={index} className='specialButt'>{item}</button>
             )
-        })}
-    </div>
+      })
   );
 };
 
