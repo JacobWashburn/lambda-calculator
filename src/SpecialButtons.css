@@ -1,9 +1,9 @@
 .specialButtCont {
-    width: 75%;
+    width: 100%;
     display: flex;
     flex-wrap: wrap;
     margin-left: 3%;
-    justify-content: space-between;
+    justify-content: space-evenly;
 }
 
 .specialButt {

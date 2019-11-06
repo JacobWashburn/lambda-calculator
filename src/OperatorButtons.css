@@ -1,7 +1,7 @@
 .operButtCont {
     display: flex;
     flex-direction: column;
-    height: 500px;
+    height: 100%;
 }
 
 .operButt {
@@ -9,7 +9,7 @@
     border-color: #007094;
     width: 100px;
     height: 100px;
-    margin: 2%;
+    margin: 12% 0;
     font-size: 3rem;
     background-color: #007094;
     color: white;
@@ -17,3 +17,6 @@
     outline: none;
 }
 
+.mainOperButtCont {
+    height: 100%;
+}

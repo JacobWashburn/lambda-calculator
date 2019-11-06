@@ -21,10 +21,11 @@ function App() {
             <div className="App">
                 <Display/>
                 <div className='mainButtCont'>
-                    <div className='specialButtCont'>
-                        <Specials/>
-                    </div>
+
                     <div className="numButtCont">
+                        <div className='specialButtCont'>
+                            <Specials/>
+                        </div>
                         <Numbers/>
                     </div>
                     <div className='mainOperButtCont'>
