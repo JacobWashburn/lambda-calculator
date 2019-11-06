@@ -1,5 +1,6 @@
 import React, {useState} from "react";
 import {operators} from '../../../data'
+import OperatorButton from './OperatorButton'
 //import any components needed
 
 //Import your array data to from the provided data file
@@ -11,7 +12,7 @@ const Operators = () => {
     return (
         operator.map((item, index) => {
             return (
-                <button key={index} className='operButt'>{item.char}</button>
+                <OperatorButton k={index} class='operButt' operator={item.char}/>
             )
         })
     );

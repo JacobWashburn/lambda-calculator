@@ -1,5 +1,6 @@
 import React, {useState} from "react";
 import {specials} from '../../../data'
+import SpecialButton from './SpecialButton'
 
 //import any components needed
 
@@ -9,9 +10,9 @@ const Specials = () => {
   // STEP 2 - add the imported data to state
     const [specialChar] = useState(specials)
   return (
-      specialChar.map((item, index) => {
+      specialChar.map((char, index) => {
             return (
-                <button key={index} className='specialButt'>{item}</button>
+                <SpecialButton k={index} class='specialButt' char={char}/>
             )
       })
   );

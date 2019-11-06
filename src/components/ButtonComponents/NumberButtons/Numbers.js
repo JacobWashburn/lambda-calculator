@@ -1,5 +1,6 @@
 import React, {useState} from "react";
 import {numbers} from '../../../data'
+import NumberButton from './NumberButton'
 //import any components needed
 // example of import from data.js. Note all the ../   This is how we move through folders. 
 
@@ -17,14 +18,14 @@ const Numbers = () => {
     // })
     // console.log(createButtons)
     return (
-        numbersList.map((num) => {
+        numbersList.map((num, index) => {
             if (num === '0') {
                 return (
-                    <button className='numButt zero' key={num}>{num}</button>
+                    <NumberButton class='numButt zero' k={index} number={num}/>
                 )
             } else {
                 return (
-                    <button className='numButt ' key={num}>{num}</button>
+                    <NumberButton class='numButt ' k={index} number={num}/>
                 )
             }
         })

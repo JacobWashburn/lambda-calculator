@@ -1,12 +1,11 @@
 import React from "react";
-import Operators from './Operators'
 
 
-const OperatorButton = () => {
+const OperatorButton = (props) => {
     return (
-        <div className='operButtCont'>
-            <Operators/>
-        </div>
+
+        <button className={props.class} key={props.k}>{props.operator}</button>
+
     );
 };
 

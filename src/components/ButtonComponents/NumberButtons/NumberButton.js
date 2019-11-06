@@ -1,11 +1,10 @@
 import React from "react";
-import Numbers from './Numbers'
 
-const NumberButton = () => {
+
+const NumberButton = (props) => {
     return (
-        <div className="numButtCont">
-            <Numbers/>
-        </div>
+        <button className={props.class} key={props.k}>{props.number}</button>
+
     );
 };
 
